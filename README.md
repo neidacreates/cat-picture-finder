@@ -1,1 +1,1 @@
-# cat-picture-finder
+# Cat Picture Finder
