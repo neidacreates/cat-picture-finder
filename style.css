@@ -1,3 +1,52 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #87baab;
+    color: #512D38;
+    text-align: center;
+    font-family: cursive;
+    font-size: large;
+}
+
+main {
+    padding: 20px;
+}
+
+#breed-list {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#breed-list li {
+    flex: 0 0 calc(23% - 2%);
+    box-sizing: border-box;
+    padding: 2%;
+    margin: 1%;
+    text-align: center;
+    background-color: #512D38;
+    
+}
+
+a {
+    color: #f4bfdb;
+    text-decoration: none;
+}
+
+
 #breed-pic {
-    width: 20%;
+    width: 30%;
+    border-radius: 50%;
+    border-color: #512D38;
+    border-style: dotted;
+}
+
+@media (max-width: 768px) {
+    #breed-list li {
+        flex: 0 0 calc(48% - 2%);
+    }
 }
