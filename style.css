@@ -5,8 +5,8 @@ body, html {
     background-color: #87baab;
     color: #512D38;
     text-align: center;
-    font-family: cursive;
-    font-size: large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
 }
 
 main {
@@ -29,14 +29,20 @@ main {
     margin: 1%;
     text-align: center;
     background-color: #512D38;
-    
+}
+
+#breed-list li:hover {
+    border: #f4bfdb 1px solid;
 }
 
 a {
     color: #f4bfdb;
     text-decoration: none;
 }
-
+#footer-link {
+    color: #512D38;
+    text-decoration: underline;
+}
 
 #breed-pic {
     width: 30%;
@@ -45,8 +51,29 @@ a {
     border-style: dotted;
 }
 
+.breed-info {
+    margin-right: 10%;
+    margin-left: 10%;
+    border: 1px #512D38 solid;
+    padding: 1%;
+}
+
+#back-button {
+    padding: 1%;
+    background-color: #512D38;
+    color: #f4bfdb;
+    border: none;
+    margin-bottom: 3%;
+}
+
+#back-button:hover {
+    border: #f4bfdb 1px solid;
+}
 @media (max-width: 768px) {
     #breed-list li {
         flex: 0 0 calc(48% - 2%);
+    }
+    #breed-pic {
+        width: 40%;
     }
 }
